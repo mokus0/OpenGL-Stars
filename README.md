@@ -1,0 +1,1 @@
+This is a recreation in Haskell of the star rendering part of an OpenGL benchmark app which draws a simulated "galaxy".  It is intended primarily as a test of the OpenGL-GeometryShader4 library.
