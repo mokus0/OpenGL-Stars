@@ -2,12 +2,12 @@ name:                   OpenGL-Stars
 version:                0.0.0.1
 stability:              experimental
 
-cabal-version:          >= 1.2
+cabal-version:          >= 1.6
 build-type:             Simple
 
 author:                 James Cook <mokus@deepbondi.net>
 maintainer:             James Cook <mokus@deepbondi.net>
-license:                Unspecified
+license:                PublicDomain
 homepage:               /dev/null
 
 category:               Unclassified
@@ -15,10 +15,14 @@ synopsis:               Simple test of OpenGL-GeometryShader4
 description:            This is a recreation in Haskell of the star rendering 
                         part of Apple's OpenGL Galaxy benchmark app.
 
+source-repository head
+  type: git
+  location: git://github.com/mokus0/OpenGL-Stars.git
+
 Executable OpenGL-stars
   hs-source-dirs:       src
   main-is:              Main.hs
-  build-depends:        base >= 3,
+  build-depends:        base >= 3 && < 5,
                         bitmap-opengl,
                         GLUT,
                         mersenne-random-pure64,
